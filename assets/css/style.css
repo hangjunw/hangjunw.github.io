@@ -18,6 +18,9 @@
 }
 
 *{box-sizing:border-box}
+/* [hidden] 必须显式声明：否则任何对同一元素设置 display 的类（如 .search-modal 的 display:grid）
+   都会覆盖浏览器对 hidden 属性的默认 display:none，导致浮层永远显示、遮住全页 */
+[hidden]{display:none!important}
 html{scroll-behavior:smooth}
 body{
   margin:0;background:var(--bg);color:var(--ink);
