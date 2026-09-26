@@ -16,7 +16,7 @@
   var index = [];
   var currentUser = (window.LAB_ACCESS && window.LAB_ACCESS.current) || '';
 
-  fetch('search-index.json')
+  fetch('/search-index.json')
     .then(function (r) { return r.json(); })
     .then(function (d) { index = d; })
     .catch(function () { /* 索引缺失时静默降级 */ });
