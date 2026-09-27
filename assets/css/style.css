@@ -48,7 +48,7 @@ img{max-width:100%}
 .brand-text strong{font-size:15.5px}
 .brand-text em{font-style:normal;font-size:11px;color:var(--muted)}
 .site-nav{display:flex;align-items:center;gap:4px;margin-left:auto}
-.nav-link,.nav-more{padding:7px 11px;font-size:14.5px;position:relative;color:var(--ink)}
+.nav-link,.nav-more{padding:7px 11px;font-size:14.5px;position:relative;color:var(--ink);white-space:nowrap;flex-shrink:0}
 .nav-link:hover,.nav-more:hover{background:var(--brand-soft);border-radius:8px;text-decoration:none}
 .nav-link.active{color:var(--brand);font-weight:600}
 .nav-more{cursor:pointer}
@@ -93,6 +93,8 @@ img{max-width:100%}
 .card{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:18px;box-shadow:var(--shadow)}
 .card p{color:#46505f;font-size:14.2px;margin:8px 0 0}
 .card-emoji{font-size:22px}
+.research-title{display:flex;align-items:center;gap:8px;margin:0 0 8px}
+.research-title .card-emoji{font-size:20px;line-height:1}
 .card-badges{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:8px}
 .card-title{font-size:16.5px;margin:0 0 4px;line-height:1.5}
 .tag-row{display:flex;gap:6px;flex-wrap:wrap;margin-top:10px}
