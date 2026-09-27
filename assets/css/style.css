@@ -30,7 +30,7 @@ body{
 a{color:var(--brand);text-decoration:none}
 a:hover{text-decoration:underline}
 img{max-width:100%}
-.wrap{max-width:1200px;margin:0 auto;padding:0 24px}
+.wrap{max-width:1200px;margin:0 auto;padding:0 32px}
 .muted{color:var(--muted)}
 .small{font-size:13px}
 .skip-link{position:absolute;left:-9999px}
@@ -58,7 +58,7 @@ img{max-width:100%}
 .nav-dropdown a{display:block;padding:7px 10px;font-size:14px;border-radius:7px;color:var(--ink)}
 .nav-dropdown a:hover{background:var(--brand-soft);text-decoration:none}
 .header-tools{display:flex;align-items:center;gap:10px}
-.btn-ghost{border:1px solid var(--line);background:var(--panel);padding:6px 12px;border-radius:8px;cursor:pointer;font-size:13.5px;color:var(--ink)}
+.btn-ghost{border:1px solid var(--line);background:var(--panel);padding:6px 12px;border-radius:8px;cursor:pointer;font-size:13.5px;color:var(--ink);white-space:nowrap}
 .btn-ghost:hover{border-color:var(--brand);color:var(--brand)}
 .identity-chip{cursor:pointer;border:1px dashed var(--line);background:var(--bg);border-radius:999px;padding:5px 12px;font-size:12.5px;color:var(--muted)}
 .burger{display:none;margin-left:auto;background:none;border:none;font-size:22px;cursor:pointer}
