@@ -121,8 +121,8 @@ img{max-width:100%}
 .news-cat{text-align:right;font-size:12.5px;color:var(--muted)}
 
 /* people */
-.people-strip{display:flex;flex-wrap:wrap;gap:12px}
-.person-chip{display:flex;flex-direction:column;align-items:center;gap:2px;width:104px;padding:12px 6px;
+.people-strip{display:grid;grid-template-columns:repeat(auto-fill,minmax(96px,1fr));gap:12px}
+.person-chip{display:flex;flex-direction:column;align-items:center;gap:2px;padding:12px 6px;
   background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);color:var(--ink)}
 .person-chip:hover{border-color:var(--brand);text-decoration:none}
 .person-name{font-size:14px;font-weight:600}
