@@ -82,7 +82,7 @@ img{max-width:100%}
 .stat span{font-size:13px;color:var(--muted)}
 
 /* sections */
-.section{padding-block:44px}
+.section{padding-block:20px 40px}
 .section.alt{background:var(--panel);border-block:1px solid var(--line)}
 .section-head{display:flex;align-items:baseline;justify-content:space-between;margin-bottom:16px}
 .section-title,.page-title{font-size:23px;margin:0 0 6px}
