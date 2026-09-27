@@ -131,6 +131,13 @@ img{max-width:100%}
   display:grid;place-items:center;font-weight:600;font-size:15px}
 .avatar.lg{width:56px;height:56px;font-size:19px}
 .people-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+
+/* 成员详情页照片：头部右侧，任意尺寸源图自适应（正方形取景、居中裁切） */
+.detail-head{display:flex;gap:20px;align-items:flex-start}
+.detail-head-info{flex:1 1 auto;min-width:0}
+.person-photo{flex:0 0 auto;width:200px;height:200px;object-fit:cover;border-radius:var(--radius);
+  border:1px solid var(--line);box-shadow:var(--shadow)}
+@media(max-width:640px){.person-photo{width:120px;height:120px}}
 .person-card .person-top{display:flex;gap:12px;align-items:center;margin-bottom:8px}
 .person-card p{font-size:14px}
 
