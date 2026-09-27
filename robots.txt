@@ -40,6 +40,34 @@ Disallow: /
 User-agent: cohere-ai
 Disallow: /
 
+# ---- 国内 AI / 大模型爬虫 ----
+# 下列为国内厂商的抓取 UA（含其大模型联网检索的来源爬虫）。
+# 注意：Baiduspider 同时是百度搜索的通用爬虫，屏蔽它将导致站点不再被百度收录
+#（同时也阻断文心一言的联网检索）。如仍希望保留百度搜索可见性，可删除对应两行。
+User-agent: Baiduspider
+Disallow: /
+User-agent: Baiduspider-render
+Disallow: /
+User-agent: YisouSpider
+Disallow: /
+User-agent: Sogou web spider
+Disallow: /
+User-agent: Sogou inst spider
+Disallow: /
+User-agent: DeepSeekBot
+Disallow: /
+# 以下为尚无公开官方 UA 文档、但按厂商命名惯例补充的预防性条目（不影响其它爬虫）
+User-agent: QwenBot
+Disallow: /
+User-agent: ErnieBot
+Disallow: /
+User-agent: MoonshotBot
+Disallow: /
+User-agent: TencentBot
+Disallow: /
+User-agent: TencentAIspider
+Disallow: /
+
 # 普通搜索引擎不受影响，可正常收录
 User-agent: *
 Allow: /
